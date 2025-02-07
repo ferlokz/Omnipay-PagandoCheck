@@ -1,6 +1,6 @@
 # Cencerro/OmnipayPagandoCheck
-## Objetivo 1
-Se debe poder utilizar la pasarela de pago de Pagando Check con la librería de PHP Omnipay.
+Integración de pasarela de pago de Pagando Check para su uso mediante la interfaz de Omnipay.
 
-## Objetivo 2
-Se debe agregar la lógica para poder gestionar suscripciones/pagos recurrentes.
+[Omnipay](https://omnipay.thephpleague.com/) es una librería de php que permite la integración y gestión de múltiples pasarelas de pago compartiendo una única interfaz para reducir o evitar ajustes complejos en código.
+
+[Pagando Check](https://www.pagandocheck.com/) es una pasarela de pago que permite transacciones en comercios electrónicos y en terminal.

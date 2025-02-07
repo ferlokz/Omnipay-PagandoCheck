@@ -1,19 +1,30 @@
 {
     "name": "cencerro/omnipay-pagandocheck",
-    "description": "Integración de pasarela de pago de Pagando Check para su uso mediante la interfaz de Omnipay.",
+    "description": "Pasarela de pago Pagando Check para OmniPay.",
     "type": "library",
-    "license": "proprietary",
-    "autoload": {
-        "psr-4": {
-            "Cencerro\\OmnipayPagandoCheck\\": "src/"
-        }
-    },
+    "license": "MIT",
+    "keywords": [
+        "Pagando Check",
+        "pagando",
+        "check",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
     "authors": [
         {
             "name": "lmaldonado-cencerro",
             "email": "ferleon@cencerro.com.mx"
         }
     ],
+    "homepage": "https://github.com/CencerroMX/Cencerro-Omnipay-PagandoCheck",
+    "autoload": {
+        "psr-4": {
+            "Cencerro\\OmnipayPagandoCheck\\": "src/"
+        }
+    },
     "require": {
         "league/omnipay": "^3.2",
         "vlucas/phpdotenv": "^5.6"
@@ -24,5 +35,7 @@
         "allow-plugins": {
             "php-http/discovery": true
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
