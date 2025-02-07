@@ -1,4 +1,5 @@
 /vendor/
 .env
 /api/
+/ejemplos-copilot
 index.phtml
