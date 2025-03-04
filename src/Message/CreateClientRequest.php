@@ -15,10 +15,11 @@
             ];
         }
 
-        public function sendData($data) {            
+        public function sendData($data) {       
+            $endpoint = $this->getEndpoint();     
             $httpResponse = $this->httpClient->request(
                 'POST',
-                'https://api.pagandocheck.com/v1/pagando/users/user',
+                $endpoint . 'users/user',
                 [
                     'Content-Type' => 'application/json',
                     'Authorization' => 'bearer ' . $this->getToken()

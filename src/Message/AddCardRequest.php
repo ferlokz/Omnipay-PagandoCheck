@@ -22,10 +22,11 @@
             ];
         }
 
-        public function sendData($data) {                
+        public function sendData($data) {
+            $endpoint = $this->getEndpoint();                
             $httpResponse = $this->httpClient->request(
                 'POST',
-                'https://api.pagandocheck.com/v1/pagando/payment_methods/add_card',
+                $endpoint . 'payment_methods/add_card',
                 [
                     'Content-Type' => 'application/json',
                     'Authorization' => 'bearer ' . $this->getToken()

@@ -14,6 +14,7 @@
 
         public function getDefaultParameters() {
             return [
+                'testMode' => true,
                 'user' => '',
                 'password' => '',
                 'token' => '',
@@ -25,6 +26,7 @@
 
         public function getCurrentParameters() {
             return [
+                'testMode' => $this->getTestMode(),
                 'user' => $this->getUser(),
                 'password' => $this->getPassword(),
                 'token' => $this->getToken(),
@@ -32,6 +34,14 @@
                 'cardId' => $this->getCardId(),
                 'folio' => $this->getFolio(),
             ];
+        }
+
+        public function getTestMode() {
+            return $this->getParameter('testMode');
+        }
+
+        public function setTestMode($value) {
+            return $this->setParameter('testMode', $value);
         }
 
         public function getUser() {

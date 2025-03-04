@@ -12,10 +12,11 @@
 FROM composer:lts as deps
 
 # Instalar la extensión bcmath
-RUN docker-php-ext-install bcmath
+RUN docker-php-ext-install bcmath mysqli
 
 # Modificar el archivo php.ini directamente
 RUN echo "extension=bcmath" >> "$PHP_INI_DIR/php.ini"
+RUN echo "extension=mysqli" >> "$PHP_INI_DIR/php.ini"
 
 WORKDIR /app
 
@@ -43,10 +44,11 @@ RUN --mount=type=bind,source=composer.json,target=composer.json \
 FROM php:8.2-apache as final
 
 # Instalar la extensión bcmath
-RUN docker-php-ext-install bcmath
+RUN docker-php-ext-install bcmath mysqli
 
 # Modificar el archivo php.ini directamente
 RUN echo "extension=bcmath" >> "$PHP_INI_DIR/php.ini"
+RUN echo "extension=mysqli" >> "$PHP_INI_DIR/php.ini"
 
 # Your PHP application may require additional PHP extensions to be installed
 # manually. For detailed instructions for installing extensions can be found, see

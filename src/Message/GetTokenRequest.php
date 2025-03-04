@@ -12,9 +12,10 @@
         }
 
         public function sendData($data) {
+            $endpoint = $this->getEndpoint();
             $httpResponse = $this->httpClient->request(
                 'POST',
-                'https://api.pagandocheck.com/v1/pagando/get-token',
+                $endpoint . 'get-token',
                 [
                     'Content-Type' => 'application/json'
                 ],

@@ -2,6 +2,25 @@
     namespace Cencerro\OmnipayPagandoCheck\Message;
 
     abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest {
+
+        const API_VERSION = 'v1';
+
+        protected $testEndpoint = 'https://payments.staging.pagandocheck.com';
+        protected $liveEndpoint = 'https://api.pagandocheck.com';
+
+        protected function getEndpoint() {
+            $base = $this->getTestMode() ? $this->testEndpoint : $this->liveEndpoint;
+            return $base . '/' . self::API_VERSION . '/pagando/';
+        }
+
+        public function getTestMode() {
+            return $this->getParameter('testMode');
+        }
+
+        public function setTestMode($value) {
+            return $this->setParameter('testMode', $value);
+        }
+
         public function getUser() {
             return $this->getParameter('user');
         }
