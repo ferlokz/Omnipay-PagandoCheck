@@ -20,7 +20,12 @@
                 'token' => '',
                 'userId' => '',
                 'cardId' => '',
+                'orderId' => '',
+                'agreement' => '',
+                'transactionNumber' => '',
                 'folio' => '',
+                'reference' => '',
+                'orderNumber' => '',
             ];
         }
 
@@ -32,7 +37,12 @@
                 'token' => $this->getToken(),
                 'userId' => $this->getUserId(),
                 'cardId' => $this->getCardId(),
+                'orderId' => $this->getOrderId(),
+                'agreement' => $this->getAgreement(),
+                'transactionNumber' => $this->getFolio(),
                 'folio' => $this->getFolio(),
+                'reference' => $this->getFolio(),
+                'orderNumber' => $this->getFolio(),
             ];
         }
 
@@ -84,12 +94,52 @@
             return $this->setParameter('cardId', $value);
         }
 
+        public function getOrderId() {
+            return $this->getParameter('orderId');
+        }
+
+        public function setOrderId($value) {
+            return $this->setParameter('orderId', $value);
+        }
+
+        public function getAgreement() {
+            return $this->getParameter('agreement');
+        }
+
+        public function setAgreement($value) {
+            return $this->setParameter('agreement', $value);
+        }
+
+        public function getTransactionNumber() {
+            return $this->getParameter('transactionNumber');
+        }
+
+        public function setTransactionNumber($value) {
+            return $this->setParameter('transactionNumber', $value);
+        }
+
         public function getFolio() {
             return $this->getParameter('folio');
         }
 
         public function setFolio($value) {
             return $this->setParameter('folio', $value);
+        }
+
+        public function getReference() {
+            return $this->getParameter('reference');
+        }
+
+        public function setReference($value) {
+            return $this->setParameter('reference', $value);
+        }
+
+        public function getOrderNumber() {
+            return $this->getParameter('orderNumber');
+        }
+
+        public function setOrderNumber($value) {
+            return $this->setParameter('orderNumber', $value);
         }
 
         public function getAuthorizationToken() {

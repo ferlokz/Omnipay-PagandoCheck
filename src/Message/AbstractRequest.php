@@ -229,12 +229,52 @@
             return $this->setParameter('expediteShipping', $value);
         }
 
+        public function getAgreement() {
+            return $this->getParameter('agreement');
+        }
+
+        public function setAgreement($value) {
+            return $this->setParameter('agreement', $value);
+        }
+
+        public function getOrderId() {
+            return $this->getParameter('orderId');
+        }
+
+        public function setOrderId($value) {
+            return $this->setParameter('orderId', $value);
+        }
+
+        public function getTransactionNumber() {
+            return $this->getParameter('transactionNumber');
+        }
+
+        public function setTransactionNumber($value) {
+            return $this->setParameter('transactionNumber', $value);
+        }
+
         public function getFolio() {
             return $this->getParameter('folio');
         }
 
         public function setFolio($value) {
             return $this->setParameter('folio', $value);
+        }
+
+        public function getReference() {
+            return $this->getParameter('reference');
+        }
+
+        public function setReference($value) {
+            return $this->setParameter('reference', $value);
+        }
+
+        public function getOrderNumber() {
+            return $this->getParameter('orderNumber');
+        }
+
+        public function setOrderNumber($value) {
+            return $this->setParameter('orderNumber', $value);
         }
     }
 ?>

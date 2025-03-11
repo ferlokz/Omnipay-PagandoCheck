@@ -9,15 +9,11 @@
         }
 
         public function getCode() {
-            if (isset($this->data['code'])) {
-                return $this->data['code'];
-            }
+            return $this->data['code'] ?? null;
         }
 
         public function getMessage() {
-            if (isset($this->data['message'])) {
-                return $this->data['message'];
-            }
+            return $this->data['message'] ?? null;
         }
 
         public function getAuthorizationToken() {

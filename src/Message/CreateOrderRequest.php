@@ -3,13 +3,14 @@
 
     class CreateOrderRequest extends AbstractRequest {
         public function getData() {
-            $this->validate('userId', 'amount', 'concept', 'cardId', 'items');
+            $this->validate('userId', 'amount', 'concept', 'cardId');
 
             return [
                 'userId' => $this->getUserId(),
                 'amount' => $this->getAmount(),
                 'concept' => $this->getConcept(),
                 'cardId' => $this->getCardId(),
+                'agreement' => $this->getAgreement(),
                 'aftToken' => $this->getAFTToken(),
                 'pin' => $this->getPin(),
                 'street' => $this->getStreet(),
