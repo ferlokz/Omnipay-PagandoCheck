@@ -1,9 +1,1 @@
 /vendor/
-.env
-/api/
-/ejemplos-copilot
-index.phtml
-functions.js
-template.js
-styles.css
-queries.sql
