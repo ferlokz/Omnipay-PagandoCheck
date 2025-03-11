@@ -39,10 +39,10 @@
                 'cardId' => $this->getCardId(),
                 'orderId' => $this->getOrderId(),
                 'agreement' => $this->getAgreement(),
-                'transactionNumber' => $this->getFolio(),
+                'transactionNumber' => $this->getTransactionNumber(),
                 'folio' => $this->getFolio(),
-                'reference' => $this->getFolio(),
-                'orderNumber' => $this->getFolio(),
+                'reference' => $this->getReference(),
+                'orderNumber' => $this->getOrderNumber(),
             ];
         }
 
