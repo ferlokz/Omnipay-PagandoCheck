@@ -6,6 +6,7 @@
     use Cencerro\OmnipayPagandoCheck\Message\CreateClientRequest;
     use Cencerro\OmnipayPagandoCheck\Message\AddCardRequest;
     use Cencerro\OmnipayPagandoCheck\Message\CreateOrderRequest;
+    use Cencerro\OmnipayPagandoCheck\Message\PayOrderRequest;
 
     class Gateway extends AbstractGateway {
         public function getName() {
@@ -156,6 +157,10 @@
 
         public function purchase(array $parameters = []) {
             return $this->createRequest(CreateOrderRequest::class, $parameters);
+        }
+
+        public function confirmPurchase(array $parameters = []) {
+            return $this->createRequest(PayOrderRequest::class, $parameters);
         }
     }
 ?>

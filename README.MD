@@ -5,6 +5,10 @@ Integración de pasarela de pago de Pagando Check para su uso mediante la interf
 
 [Pagando Check](https://www.pagandocheck.com/) es una pasarela de pago que permite transacciones en comercios electrónicos y en terminal.
 
+## Instalación del paquete en su proyecto
+```bash
+    composer require cencerro/omnipay-pagandocheck
+```
 
 ## Implementación
 1. Crear una cuenta en [Pagando Check](https://www.pagandocheck.com/) y acceder al portal de administración.
