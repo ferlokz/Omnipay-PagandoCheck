@@ -1,5 +1,5 @@
 <?php
-    namespace Cencerro\OmnipayPagandoCheck\Message;
+    namespace Ferlokz\OmnipayPagandoCheck\Message;
 
     use Omnipay\Common\Message\AbstractResponse;
 

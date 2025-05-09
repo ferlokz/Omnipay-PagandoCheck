@@ -1,4 +1,4 @@
-# Cencerro/OmnipayPagandoCheck
+# Ferlokz/OmnipayPagandoCheck
 Integración de pasarela de pago de Pagando Check para su uso mediante la interfaz de Omnipay.
 
 [Omnipay](https://omnipay.thephpleague.com/) es una librería de php que permite la integración y gestión de múltiples pasarelas de pago compartiendo una única interfaz para reducir o evitar ajustes complejos en código.
@@ -7,7 +7,7 @@ Integración de pasarela de pago de Pagando Check para su uso mediante la interf
 
 ## Instalación del paquete en su proyecto
 ```bash
-    composer require cencerro/omnipay-pagandocheck
+    composer require ferlokz/omnipay-pagandocheck
 ```
 
 ## Implementación
@@ -31,7 +31,7 @@ Integración de pasarela de pago de Pagando Check para su uso mediante la interf
 7. Inicializar la pasarela de pago con Omnipay.
 ```php
     // Inicializar el gateway
-    $gateway = Omnipay::create('Cencerro\OmnipayPagandoCheck\Gateway');
+    $gateway = Omnipay::create('Ferlokz\OmnipayPagandoCheck\Gateway');
     $gateway->setUser($api_user);
     $gateway->setPassword($api_password);
 ```

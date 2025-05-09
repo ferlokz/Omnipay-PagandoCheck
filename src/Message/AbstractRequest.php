@@ -1,5 +1,5 @@
 <?php
-    namespace Cencerro\OmnipayPagandoCheck\Message;
+    namespace Ferlokz\OmnipayPagandoCheck\Message;
 
     abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest {
 

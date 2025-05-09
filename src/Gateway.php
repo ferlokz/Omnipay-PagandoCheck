@@ -1,12 +1,12 @@
 <?php
-    namespace Cencerro\OmnipayPagandoCheck;
+    namespace Ferlokz\OmnipayPagandoCheck;
 
     use Omnipay\Common\AbstractGateway;
-    use Cencerro\OmnipayPagandoCheck\Message\GetTokenRequest;
-    use Cencerro\OmnipayPagandoCheck\Message\CreateClientRequest;
-    use Cencerro\OmnipayPagandoCheck\Message\AddCardRequest;
-    use Cencerro\OmnipayPagandoCheck\Message\CreateOrderRequest;
-    use Cencerro\OmnipayPagandoCheck\Message\PayOrderRequest;
+    use Ferlokz\OmnipayPagandoCheck\Message\GetTokenRequest;
+    use Ferlokz\OmnipayPagandoCheck\Message\CreateClientRequest;
+    use Ferlokz\OmnipayPagandoCheck\Message\AddCardRequest;
+    use Ferlokz\OmnipayPagandoCheck\Message\CreateOrderRequest;
+    use Ferlokz\OmnipayPagandoCheck\Message\PayOrderRequest;
 
     class Gateway extends AbstractGateway {
         public function getName() {

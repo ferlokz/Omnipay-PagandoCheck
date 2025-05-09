@@ -1,5 +1,5 @@
 {
-    "name": "cencerro/omnipay-pagandocheck",
+    "name": "ferlokz/omnipay-pagandocheck",
     "description": "Pasarela de pago Pagando Check para OmniPay.",
     "type": "library",
     "license": "MIT",
@@ -15,14 +15,14 @@
     ],
     "authors": [
         {
-            "name": "lmaldonado-cencerro",
-            "email": "ferleon@cencerro.com.mx"
+            "name": "ferlokz",
+            "email": "lmaltap@proton.me"
         }
     ],
-    "homepage": "https://github.com/CencerroMX/Cencerro-Omnipay-PagandoCheck",
+    "homepage": "https://github.com/ferlokz/Omnipay-PagandoCheck",
     "autoload": {
         "psr-4": {
-            "Cencerro\\OmnipayPagandoCheck\\": "src/"
+            "Ferlokz\\OmnipayPagandoCheck\\": "src/"
         }
     },
     "require": {
